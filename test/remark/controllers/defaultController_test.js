@@ -48,11 +48,11 @@ describe('Controller', function () {
       events.emit.should.be.calledWithExactly('gotoPreviousSlide');
     });
 
-    it('should navigate to previous slide when pressing arrow left', function () {
-      events.emit('keydown', {keyCode: 37});
-
-      events.emit.should.be.calledWithExactly('gotoPreviousSlide');
-    });
+    // it('should navigate to previous slide when pressing arrow left', function () {
+    //   events.emit('keydown', {keyCode: 37});
+    //
+    //   events.emit.should.be.calledWithExactly('gotoPreviousSlide');
+    // });
 
     it('should navigate to previous slide when pressing arrow up', function () {
       events.emit('keydown', {keyCode: 38});
@@ -72,17 +72,17 @@ describe('Controller', function () {
       events.emit.should.be.calledWithExactly('gotoNextSlide');
     });
 
-    it('should navigate to next slide when pressing arrow right', function () {
-      events.emit('keydown', {keyCode: 39});
+    // it('should navigate to next slide when pressing arrow right', function () {
+    //   events.emit('keydown', {keyCode: 39});
+    //
+    //   events.emit.should.be.calledWithExactly('gotoNextSlide');
+    // });
 
-      events.emit.should.be.calledWithExactly('gotoNextSlide');
-    });
-
-    it('should navigate to next slide when pressing arrow down', function () {
-      events.emit('keydown', {keyCode: 39});
-
-      events.emit.should.be.calledWithExactly('gotoNextSlide');
-    });
+    // it('should navigate to next slide when pressing arrow down', function () {
+    //   events.emit('keydown', {keyCode: 39});
+    //
+    //   events.emit.should.be.calledWithExactly('gotoNextSlide');
+    // });
 
     it('should navigate to first slide when pressing home', function () {
       events.emit('keydown', {keyCode: 36});

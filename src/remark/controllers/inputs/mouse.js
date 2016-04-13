@@ -30,10 +30,10 @@ function addMouseEventListeners (events, options) {
   if (options.scroll !== false) {
     var scrollHandler = function (event) {
       if (event.wheelDeltaY > 0 || event.detail < 0) {
-        events.emit('gotoPreviousSlide');
+        // events.emit('gotoPreviousSlide');
       }
       else if (event.wheelDeltaY < 0 || event.detail > 0) {
-        events.emit('gotoNextSlide');
+        // events.emit('gotoNextSlide');
       }
     };
 

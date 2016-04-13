@@ -26,10 +26,10 @@ function addTouchEventListeners (events, options) {
 
   var handleSwipe = function () {
     if (startX > endX) {
-      events.emit('gotoNextSlide');
+      // events.emit('gotoNextSlide');
     }
     else {
-      events.emit('gotoPreviousSlide');
+      // events.emit('gotoPreviousSlide');
     }
   };
 
